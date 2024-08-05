@@ -6,6 +6,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/services" element={<Services />} />
+
+
         {/* Add other routes here */}
       </Routes>
     </Router>
