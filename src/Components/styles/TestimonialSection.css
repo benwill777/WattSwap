@@ -1,0 +1,23 @@
+.testimonial-section {
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .testimonials {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial {
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .testimonial p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  

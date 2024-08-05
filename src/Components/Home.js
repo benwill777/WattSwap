@@ -29,3 +29,21 @@ const Home = () => {
           <div className="feature">
             <h3>Safe and Secure</h3>
             <p>Our platform ensures a secure and trustworthy experience.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div className="recent-listings">
+        <h2>Recent Listings</h2>
+        <ItemList />
+      </div>
+      
+      <div className="cta-section">
+        <h2>Ready to Swap?</h2>
+        <Link to="/signup" className="cta-button">Join Now</Link>
+      </div>
+    </div>
+  );
+};
+
+export default Home;

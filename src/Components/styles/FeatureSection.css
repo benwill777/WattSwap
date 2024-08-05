@@ -1,0 +1,26 @@
+.feature-section {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+  }
+  
+  .feature p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
