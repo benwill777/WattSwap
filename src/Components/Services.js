@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/FeatureSection.css';
+import './styles/Services.css';
 
 const FeatureSection = () => {
   return (
@@ -8,10 +8,10 @@ const FeatureSection = () => {
       <div className="features">
         <div className="feature">
           <h3>Find Charging Points</h3>
-          <p>Locate nearby charging points effortlessly.</p>
+          <p>Locate nearby charging ports effortlessly.</p>
         </div>
         <div className="feature">
-          <h3>Host a Charger</h3>
+          <h3>Become Charging Host</h3>
           <p>Earn money by sharing your EV charger.</p>
         </div>
         <div className="feature">

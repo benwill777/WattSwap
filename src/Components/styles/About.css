@@ -1,0 +1,77 @@
+/* About.css */
+
+/* General Container Styles */
+.about-container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  /* Content Section Styles */
+  .about-content {
+    margin-bottom: 40px;
+  }
+  
+  .about-content h1 {
+    font-size: 2.5rem;
+    color: #007bff; /* Primary color for headings */
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+  
+  /* Features Section Styles */
+  .features-section {
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .features-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    flex: 1;
+    max-width: 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Hover Effect for Features */
+  .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  

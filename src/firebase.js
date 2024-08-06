@@ -1,23 +1,29 @@
-import firebase from 'firebase/app';
-import { initializeApp } from "firebase/app";
-import { getAnalytics, initializeAnalytics } from "firebase/analytics";
-import 'firebase/auth';
-import 'firebase/firestore';
+// Import the necessary functions from the SDKs
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+require('dotenv').config()
 
-const firebaseConfig = {
-    apiKey: "AIzaSyD_oNBzPuNMgZAzBHNlwW-2ZePGW7h5XRk",
-    authDomain: "watt-swap.firebaseapp.com",
-    projectId: "watt-swap",
-    storageBucket: "watt-swap.appspot.com",
-    messagingSenderId: "435722590970",
-    appId: "1:435722590970:web:6313caa8fd41b191844743",
-    measurementId: "G-V348Z1EFBC"
-};
+console.log(process.env);
 
-firebase.initializeApp(firebaseConfig);
+// Your web app's Firebase configuration
+const functions = require('firebase-functions');
+const { getSecretValue } = require('./secrets'); // Assuming 'secrets.js' is in the same directory
+
+exports.myFunction = functions.https.onRequest(async (req, res) => {
+  const secretValue = await getSecretValue(
+    'projects/watt-swap/secrets/firebase-config/versions/latest'
+  );
+  // Use the secretValue in your function logic
+  res.send('Secret value: ' + secretValue);
+});
+
+
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = initializeAnalytics(firebaseConfig);
-export const auth = firebase.auth();
-export const getanalytics = firebase.analytics();
-export const initializeanalytics = firebase.analytics();
-export const firestore = firebase.firestore();
+const analytics = getAnalytics(app);
+const auth = getAuth(app);
+const firestore = getFirestore(app);
+
+export { auth, firestore, analytics };

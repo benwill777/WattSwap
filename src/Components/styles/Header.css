@@ -3,8 +3,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background: #15A728;
+    background: -moz-linear-gradient(left, #15A728 0%, #1C6EA4 50%, #4C15C5 100%);
+    background: -webkit-linear-gradient(left, #15A728 0%, #1C6EA4 50%, #4C15C5 100%);
+    background: linear-gradient(to right, #15A728 0%, #1C6EA4 50%, #4C15C5 100%);
+    color: rgb(218, 228, 220);
   }
   
   .logo {
@@ -13,11 +16,12 @@
   
   nav a {
     margin: 0 15px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
   
   nav a:hover {
     text-decoration: underline;
+    text-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
   }
   

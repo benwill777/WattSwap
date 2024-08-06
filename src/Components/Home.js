@@ -1,8 +1,7 @@
 // src/components/Home.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ItemList from './ItemList'; // Assuming ItemList component exists
-import './Home.css'; // Add your styling here
+import './styles/Home.css'; // Add your styling here
 
 const Home = () => {
   return (
