@@ -5,8 +5,10 @@
   
   .hero-section {
     background: url('../../assets/hero-image.jpg') no-repeat center center/cover;
-    color: rgb(240, 230, 230);
+    color: #5610ec;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 1.7); /* Subtle shadowing */
     padding: 100px 20px;
+    margin: 0;
   }
   
   .hero-section h1 {
@@ -15,12 +17,16 @@
   
   .hero-section p {
     font-size: 1.5rem;
+    color: #dddddd;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 1.2); /* Softer shadow for smaller text */
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
   
   .cta-button {
     padding: 10px 20px;
-    background-color: #c5f3ed;
-    color: rgb(241, 99, 99);
+    background-color: #0ac5ac;
+    color: rgb(241, 238, 238);
     border: none;
     border-radius: 5px;
     cursor: pointer;
